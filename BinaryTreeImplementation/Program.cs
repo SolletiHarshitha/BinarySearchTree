@@ -25,6 +25,8 @@ namespace BinaryTreeImplementation
             binaryTree.Display();
             //Get the size of the tree.......
             binaryTree.GetSize();
+            //Search an element
+            bool result = binaryTree.Search(63, binaryTree);
         }
     }
 }
