@@ -69,14 +69,13 @@ namespace BinaryTreeImplementation
                 return false;
             if(node.NodeData.Equals(element))
             {
-                Console.WriteLine("The element "+node.NodeData+" is found in Binary Search Tree");
                 result = true;
             }
-            if(element.CompareTo(node.NodeData) < 0)
+            else if(element.CompareTo(node.NodeData) < 0)
             {
                 Search(element, node.LeftTree);
             }
-            if (element.CompareTo(node.NodeData) > 0)
+            else if (element.CompareTo(node.NodeData) > 0)
             {
                 Search(element, node.RightTree);
             }
