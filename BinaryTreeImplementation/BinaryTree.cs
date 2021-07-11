@@ -20,6 +20,7 @@ namespace BinaryTreeImplementation
         int leftCount = 0, rightCount = 0;
         bool result = false;
 
+        //Insert elements
         public void Insert(T item)
         {
             T currentNodeValue = this.NodeData;
@@ -39,6 +40,7 @@ namespace BinaryTreeImplementation
             }
         }
 
+        //Dispaly elements
         public void Display()
         {
             if(this.LeftTree!=null)
